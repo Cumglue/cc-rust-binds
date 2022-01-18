@@ -10,6 +10,6 @@ pub fn setup_hook() {
 }
 
 #[wasm_bindgen]
-pub fn test() {
-    cumcord::cum();
+pub fn test() -> String {
+    return "hello".into();//cumcord::cum().into();
 }
