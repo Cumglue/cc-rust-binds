@@ -10,12 +10,12 @@ TODO
 To build this project run 
 
 ```bash
-    cargo build --release
+cargo build --release
 ```
 
 To build the example plugin run
 
 ```bash
-    cd tests
-    sperm build
+cd tests
+sperm build
 ```
