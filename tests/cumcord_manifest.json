@@ -1,0 +1,7 @@
+{
+  "name": "cc-binds-test",
+  "description": "Simple test plugin for Rust Bindings.",
+  "author": "Alethéia",
+  "file": "index.js",
+  "license": "MIT"
+}
