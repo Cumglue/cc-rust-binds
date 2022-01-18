@@ -10,7 +10,7 @@ TODO
 To build this project run 
 
 ```bash
-cargo build --release
+wasm-pack build --release
 ```
 
 To build the example plugin run
