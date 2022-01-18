@@ -10,7 +10,7 @@ TODO
 To build this project run 
 
 ```bash
-wasm-pack build --release
+wasm-pack build --release --target web
 ```
 
 To build the example plugin run
