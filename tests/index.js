@@ -1,6 +1,8 @@
-import init from '../pkg';
+import init, { testFunction, setup_hook } from '../pkg';
 
 import wasm from '../pkg/cc_binds_bg.wasm';
+
+// TODO: Add the base64 decode function automagically with the rollup plugin
 
 function _base64ToArrayBuffer(base64) {
     var binary_string = window.atob(base64);
@@ -15,10 +17,9 @@ function _base64ToArrayBuffer(base64) {
 export default (data) => {
     return {
         async onLoad() {
-            const cumglue = await init(_base64ToArrayBuffer(wasm));
-            cumglue.setup_hook();
-            let x = cumglue.test();
-            console.log(typeof(x), x);
+            await init(_base64ToArrayBuffer(wasm));
+            setup_hook();
+            console.log(testFunction()); // Should call cumcord.cum()
         },
         onUnload() {}
     }
