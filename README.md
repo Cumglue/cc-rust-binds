@@ -6,7 +6,7 @@ Ever wanted to make your Cumcord plugins using Rust? Neither did we! That's why 
 Mockup:
 1) Import crate
 2) Use cumcord functions
-3) Compile
+3) Cumpile
 4) Use in your plugin
 
 Example plugin included to show how to use it
